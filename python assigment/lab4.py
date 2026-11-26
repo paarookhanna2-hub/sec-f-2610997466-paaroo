@@ -1,0 +1,31 @@
+print("==============================================")
+print("           DATA CONVERSION UTILITY            ")
+print("==============================================")
+
+product_name = input("Enter Product Name : ")
+price = float(input("Enter Price        : "))
+quantity = int(input("Enter Quantity     : "))
+
+total_price = price * quantity
+amount_str = str(total_price)
+
+print("\n----------------------------------------------")
+print("             TYPE CASTING SUMMARY             ")
+print("----------------------------------------------")
+print(f"{'Variable':<15} {'Value':<12} {'Python Type'}")
+print("----------------------------------------------")
+print(f"{'product_name':<15} {product_name:<12} {type(product_name)}")
+print(f"{'price':<15} {price:<12} {type(price)}")
+print(f"{'quantity':<15} {quantity:<12} {type(quantity)}")
+print(f"{'total_price':<15} {total_price:<12} {type(total_price)}")
+print(f"{'amount_str':<15} {amount_str:<12} {type(amount_str)}")
+
+print("\n==============================================")
+print("                 TAX INVOICE                  ")
+print("==============================================")
+print(f"{'Product Name':<15}: {product_name}")
+print(f"{'Price per Unit':<15}: Rs. {price:.2f}")
+print(f"{'Quantity':<15}: {quantity}")
+print("----------------------------------------------")
+print(f"{'Invoice Total':<15}: Rs. {amount_str}")
+print("==============================================")
